@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Рядом по цене — Московская афиша</title><link rel="stylesheet" href="styles.css"><script type="module" src="app.js"></script></head>
+<body>
+<header><a class="brand" href="./">М / АФИША</a><span>Москва · поиск альтернатив</span></header>
+<main>
+<section class="intro"><p class="eyebrow">ДРУГОЕ СОБЫТИЕ. ТО ЖЕ НАСТРОЕНИЕ.</p><h1>Планы меняются.<br><span>Впечатления остаются.</span></h1><p>Выберите событие — найдём мероприятия того же жанра с самой близкой ценой.</p></section>
+<div class="workspace">
+<section class="catalog panel" aria-labelledby="catalog-title"><div class="heading"><h2 id="catalog-title">Выберите событие</h2><button id="reload" class="quiet" type="button">Обновить</button></div>
+<form id="search-form"><label for="search">Название или описание</label><div class="search-row"><input id="search" type="search" placeholder="Что вам интересно?" maxlength="250"><button type="submit">Найти</button></div><label for="genre">Жанр</label><select id="genre"><option value="">Все жанры</option></select></form>
+<p class="hint">В каталоге только опубликованные события. Даты указаны по Москве.</p><p id="catalog-status" role="status" aria-live="polite"></p><div id="events" class="event-list"></div><button id="more" class="secondary" type="button" hidden>Показать ещё</button></section>
+<section class="results" aria-labelledby="results-title"><div class="heading"><h2 id="results-title">Альтернативы</h2><span class="label">Ближе по цене — выше</span></div><div id="selected"></div><p id="results-status" role="status" aria-live="polite">Выберите событие слева, чтобы сравнить варианты.</p><div id="alternatives" class="alternatives"></div><button id="retry" class="secondary" type="button" hidden>Повторить загрузку</button><button id="more-alternatives" class="secondary" type="button" hidden>Показать ещё варианты</button></section>
+</div><footer>Московская афиша <span>Один жанр · новые впечатления</span></footer>
+</main></body></html>
